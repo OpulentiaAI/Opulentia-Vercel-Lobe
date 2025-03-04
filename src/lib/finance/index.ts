@@ -2,4 +2,4 @@
  * Export all finance-related modules
  */
 
-export * from './FinancialDataService';
+export { FinancialDataService } from './FinancialDataService';
