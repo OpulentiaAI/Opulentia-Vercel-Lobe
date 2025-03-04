@@ -1,0 +1,53 @@
+# Lobe Chat Project Intelligence
+
+This file captures important patterns, preferences, and project-specific intelligence to help work effectively with the Lobe Chat codebase.
+
+## Project Structure Patterns
+
+- The project follows a Next.js App Router structure with `/src/app` as the main application directory
+- Monorepo structure with packages in the `/packages` directory
+- Extensive internationalization with language files in `/locales` directory 
+- Documentation maintained in `/docs` with multilingual support
+- Configuration files at the root level with a preference for JavaScript format (.js extensions)
+- Docker configuration for various deployment options
+
+## Code Style Preferences
+
+- TypeScript is used throughout the codebase
+- Configuration files use JavaScript with CommonJS or ESM syntax
+- ESLint, Prettier, and Stylelint are used for code quality
+- Conventional commits are used for version control (based on commitlint config)
+- Unit tests are written with Vitest
+
+## Development Workflow
+
+- pnpm is used as the package manager (not npm or yarn)
+- The project appears to follow a feature-branch workflow
+- Changesets or similar are likely used for release management
+- Docker is used for containerized development and deployment
+- Comprehensive documentation is maintained for contributors
+
+## Observed Architectural Patterns
+
+- Zustand is used for state management
+- The app likely follows a component-based architecture
+- Internationalization appears to be a first-class concern
+- API routes are likely implemented within the Next.js framework
+- Multiple authentication providers are supported
+
+## Project Preferences
+
+- Detailed documentation is valued (extensive docs directory)
+- Multilingual support is prioritized (multiple locale files)
+- Self-hosting capabilities are important (Docker configurations)
+- Testing is emphasized (Vitest configuration)
+
+## Critical Implementation Paths
+
+- To be identified through further code exploration
+
+## Known Challenges
+
+- To be identified through further code exploration
+
+This file will be updated as we learn more about the project's specific patterns and preferences through active development and exploration.

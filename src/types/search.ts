@@ -27,3 +27,30 @@ export interface GroundingSearch {
   citations?: CitationItem[];
   searchQueries?: string[];
 }
+
+export type ReasoningDepth = 'shallow' | 'medium' | 'deep';
+
+export interface ReasoningStep {
+  action: string;
+  result?: string;
+  thought: string;
+}
+
+export interface SearchOptions {
+  confidenceThreshold?: number;
+  filters?: Record<string, any>;
+  iterativeSearch?: boolean;
+  limit?: number;
+  maxHops?: number;
+  query: string;
+  reasoningDepth?: ReasoningDepth;
+}
+
+export interface SearchResult {
+  content: string;
+  metadata: Record<string, any>;
+  reasoningChain?: ReasoningStep[];
+  relevanceScore: number;
+  source: string;
+  timestamp: string;
+}
