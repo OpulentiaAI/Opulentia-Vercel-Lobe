@@ -2,9 +2,9 @@
  * Financial Analysis Agent for OPULENTIA
  * This agent specializes in analyzing financial data and providing insights
  */
-import { FinancialDataService } from '../../lib/finance/FinancialDataService';
-import { ModelProviderManager } from '../../lib/modelProviders/ModelProviderManager';
-import { Agent, AgentExecuteParams, AgentExecuteResult } from '../../types/agents';
+import { FinancialDataService } from '@/lib/finance';
+import { ModelProviderManager } from '@/lib/modelProviders';
+import { Agent, AgentExecuteParams, AgentExecuteResult } from '@/types/agents';
 
 export class FinancialAnalysisAgent implements Agent {
   id: string;
